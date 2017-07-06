@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Bundle 'altercation/vim-colors-solarized' 
+Plugin 'Valloric/YouCompleteMe'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -36,6 +37,7 @@ set background=dark
 syntax enable
 let g:solarized_termcolors = 256
 colorscheme solarized
+set backspace=indent,eol,start
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
