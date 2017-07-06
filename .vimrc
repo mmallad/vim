@@ -10,7 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
-Bundle 'altercation/vim-colors-solarized' 
+Bundle 'altercation/vim-colors-solarized'
 Plugin 'Valloric/YouCompleteMe'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -38,6 +38,19 @@ syntax enable
 let g:solarized_termcolors = 256
 colorscheme solarized
 set backspace=indent,eol,start
+set ruler
+set showcmd
+set incsearch
+set hlsearch
+set mouse=a
+syntax on
+let g:airline_detect_paste=1
+set complete=b,u,w,t,]
+" Show airline for tabs too
+let g:airline#extensions#tabline#enabled = 1
+" Open file on vertical split
+nnoremap gf <C-W>vgf
+vnoremap gf <C-W>vgf
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
